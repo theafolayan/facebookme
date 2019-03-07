@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Facebook Me
- * Description: Adds A Nice Looking Facebook profile Link to The End of Posts
+ * Description: A Lightweight Wordpress PluginThat  Adds A Nice Looking Facebook profile Link to The End of Posts
  * Version: 1.0
  * Author: Afolayan Raphael Oluwaseun
  * Author URI: https://github.com/opensaucedeveloper
@@ -13,4 +13,9 @@ if (!defined('ABSPATH')) {
 }
 
 //Load scripts
-require_once(plugin_dir_path(__FILE__).'includes/facebook' )
+require_once(plugin_dir_path(__FILE__).'/includes/facebookmescripts.php');
+require_once(plugin_dir_path(__FILE__).'/includes/facebookme-content.php');
+require_once(plugin_dir_path(__FILE__).'/includes/facebookme-settings.php');
+
+
+
