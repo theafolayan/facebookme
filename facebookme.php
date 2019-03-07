@@ -15,7 +15,8 @@ if (!defined('ABSPATH')) {
 //Load scripts
 require_once(plugin_dir_path(__FILE__).'/includes/facebookmescripts.php');
 require_once(plugin_dir_path(__FILE__).'/includes/facebookme-content.php');
-require_once(plugin_dir_path(__FILE__).'/includes/facebookme-settings.php');
-
+if(is_admin()){
+    require_once(plugin_dir_path(__FILE__).'/includes/facebookme-settings.php');
+}
 
 
