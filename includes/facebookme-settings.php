@@ -13,7 +13,23 @@ function fbm_options_menu_link(){
 
 //Creating Options Page Content
 function fbm_options_content(){
-    echo 'test';
+ob_start(); ?>
+<div class="wrap">
+<h2><?php _e('Facebook Me Settings', 'fbm_domain')?></h2>
+<p><?php _e('Settings For The Facebook Me Link Plugin', 'fbm_domain')?></p>
+
+<form action="options.php" method="post">
+<?php setting_fields('fbm_settings_group'); ?>
+<table class="form-table">
+<tbody>
+<tr>
+<th scope="row"> <label for="fbm_settings[enable]"><?php _e('Enable', 'fbm_domain')?></label></th>
+</tr></tbody>
+</table>
+</form>
+</div>
+<?php
+echo ob_get_clean();
 }
 
 add_action('admin_menu', 'fbm_options_menu_link');
