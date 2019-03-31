@@ -11,7 +11,7 @@ function fbm_options_menu_link(){
     );
 }
 
-//Creating Options Page Content
+//I am Creating The Admin Options Page Form Content
 function fbm_options_content(){
 ob_start(); ?>
 <div class="wrap">
@@ -19,7 +19,7 @@ ob_start(); ?>
 <p><?php _e('Settings For The Facebook Me Link Plugin', 'fbm_domain')?></p>
 
 <form action="options.php" method="post">
-<?php setting_fields('fbm_settings_group'); ?>
+<?php // setting_fields('fbm_settings_group'); ?>
 <table class="form-table">
 <tbody>
 <tr>
