@@ -12,6 +12,9 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
+//GLOBAL OPTIONS VARIABLE
+$fbm_options = get_option("fbm_settings");
+
 //Load scripts
 require_once(plugin_dir_path(__FILE__).'/includes/facebookmescripts.php');
 require_once(plugin_dir_path(__FILE__).'/includes/facebookme-content.php');

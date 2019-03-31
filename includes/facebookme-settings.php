@@ -24,7 +24,7 @@ ob_start(); ?>
 <tbody>
 <tr>
 <th scope="row"> <label for="fbm_settings[enable]"><?php _e('Enable', 'fbm_domain')?></label></th>
-<td> <input type='checkbox' name = 'fbm_settings[enable]' value = '1' <?php checked("1", $fbm_options['enable']) ?>></td>
+<!-- <td> <input type='checkbox' name = 'fbm_settings[enable]' value = '1' <?php checked("1", $fbm_options['enable']) ?>></td> -->
 </tr></tbody>
 </table>
 </form>
